@@ -22,10 +22,10 @@ const centerY = window.innerHeight / 2;
 // Extend the Window interface for MathJax
 declare global {
     interface Window {
-        MathJax?: {
+        MathJax: {
             Hub: {
-                Queue: (args: any[]) => void;
-                Config: (config: any) => void;
+                Queue: (args: unknown[]) => void;
+                Config: (config: unknown) => void;
             };
         };
     }
@@ -289,8 +289,7 @@ export default function Home() {
             {showMemo && (
                 <div className='back'>
                     <h1 className='mem'>Start Scribbling....</h1>
-                    <h1 className='highl'>Shift + Command + O → Run</h1>
-                    <h1 className='highl'>Shift + Command + E → Reset</h1>
+                    
                 </div>
             )}
             {latexExpr && latexExpr.map((latex, index) => (
@@ -301,7 +300,7 @@ export default function Home() {
                 >
                     <div
                         className="absolute p-4 bg-white text-black rounded shadow-lg"
-                        style={{ fontSize: '2rem', padding: '20px', textAlign: 'center', minWidth: '200px' }}
+                        style={{ fontSize: '5rem', padding: '20px', textAlign: 'center', minWidth: '200px' }}
                     >
                         <div>{latex}</div>
                     </div>

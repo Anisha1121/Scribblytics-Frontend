@@ -1,5 +1,16 @@
 {
-  "name": "calcify",
+  "name": "scribblytics",
+  "author": "Anisha Dwivedi",
+  "description": "Scribblytics is a web application that allows users to create, edit, and share documents with advanced analytics and collaboration features.",
+  "license": "MIT",
+  "keywords": [
+    "scribblytics",
+    "web application",
+    "document editor",
+    "analytics",
+    "collaboration"
+  ],
+  
   "private": true,
   "version": "0.0.0",
   "type": "module",
