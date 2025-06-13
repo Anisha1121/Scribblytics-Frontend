@@ -356,6 +356,7 @@ const endTouch = () => {
                     key={index}
                     defaultPosition={latexPos}
                     onStop={(_, data) => setLatexPos({ x: data.x, y: data.y })}
+                    
                 >
                     <div
                         className="absolute p-4 bg-white text-black rounded shadow-lg"
